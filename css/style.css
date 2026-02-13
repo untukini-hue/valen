@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: "Allan";
-    src: url(font/Charm-Bold.ttf);
+    src: url(../font/Charm-Bold.ttf);
 }
 
 body{
     background: 
         linear-gradient(rgba(236, 255, 131, 0.158), rgba(222, 253, 85, 0.178)),
-        url(image/bgKayaknya.png) repeat;
+        url(../image/bgKayaknya.png) repeat;
     background-size: 300px 300px;
 
 }
@@ -19,7 +19,7 @@ body{
 .bgDark{
     background: 
         linear-gradient(rgba(0, 0, 0, 0.116), rgba(0, 0, 0, 0.116)),
-        url(image/bgDark.png);
+        url(../image/bgDark.png);
     background-size: 1920px 1080px;
 }
 
@@ -106,7 +106,7 @@ body{
     width:  600px;
     height: 500px;
 
-    background: url(image/textbg.png);
+    background: url(../image/textbg.png);
 
     border-radius: 20px;
 
@@ -117,11 +117,11 @@ body{
 .text p{
     width: 500px;
     height: 300;
-    text-align: center;
+    text-align: left;
 
     transform: translate(0px, -50px);
 
-    font-size: 1.2em;
+    font-size: 1.4em;
     font-family: Allan;
 
     border-radius: 20px;
@@ -163,6 +163,40 @@ body{
     border: none;
 }
 
+.penyampaian{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: -1;
+
+    width: 700px;
+    padding: 30px;
+    border-radius: 30px;
+
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.534);
+
+    opacity: 0;
+    transition: 2s;
+}
+
+.isi{
+    font-size: 1.5em;
+    text-align: justify;
+    font-family: Allan;
+}
+
+.isi p{
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.up{
+    z-index: 1;
+}
+
+/* animation */
 .show{
     opacity: 1;
 }
@@ -214,7 +248,7 @@ body{
 
 @keyframes pojok{
     0%{
-        /* transform: translate(calc(-50% - 600px), -50%); */
+        
     }
     50%{
         transform: translate(calc(-50% - 600px), -50%) scale(0.2);
@@ -237,3 +271,4 @@ body{
         opacity: 0;
     }
 }
+

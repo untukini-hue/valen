@@ -5,13 +5,13 @@
 
 @font-face {
     font-family: "Allan";
-    src: url(font/Charm-Bold.ttf);
+    src: url(../font/Charm-Bold.ttf);
 }
 
 body{
     background: 
         linear-gradient(rgba(73, 66, 66, 0.404), rgba(73, 66, 66, 0.404)),
-        url(image/login.png);
+        url(../image/login.png);
 
     background-size: 350px 400px;
     transition: background-size 1s;
@@ -20,7 +20,7 @@ body{
 .get-it{
     background: 
         linear-gradient(rgba(236, 255, 131, 0.158), rgba(222, 253, 85, 0.178)),
-        url(image/bgKayaknya.png) repeat;
+        url(../image/bgKayaknya.png) repeat;
     background-size: 300px 300px;
 }
 
@@ -48,7 +48,7 @@ body{
 
 .get-per{
     opacity: .9;
-    background: url(image/bgLove.png);
+    background: url(../image/bgLove.png);
     transform: translate(-50%, -50%) scale(1.1);
 }
 

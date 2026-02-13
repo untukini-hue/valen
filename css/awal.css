@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: 
+        linear-gradient(rgba(236, 255, 131, 0.158), rgba(222, 253, 85, 0.178)),
+        url(../image/bgKayaknya.png) repeat;
+    background-size: 300px 300px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.penyampaian{
+    background-color: rgba(209, 94, 94, 0.897);
+    width: 1500px;
+    height: 700px;
+
+    border-radius: 30px;
+    box-shadow:
+    0 4px 6px rgba(170, 120, 160, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.title{
+    margin-bottom: 40px;
+}
+
+.isi{
+    width: 1300px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+.isi p{
+    margin-bottom: 20px;
+    line-height: 2;
+}
+
+.isi li{
+    margin-bottom: 20px;
+    margin-left: 40px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button input{
+    border: none;
+    margin: 10px;
+
+    padding: 15px 20px;
+    border-radius: 20px;
+    background-color: rgb(252, 155, 179);
+}
+
+.button input:hover{
+    background-color: rgb(255, 205, 217);
+    transform: scale(1.1);
+}
